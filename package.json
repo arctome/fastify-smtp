@@ -1,0 +1,28 @@
+{
+  "name": "fastify-smtp",
+  "version": "0.0.1",
+  "description": "A basic sender via SMTP, designed for out-of-box usage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arctome/fastify-smtp.git"
+  },
+  "keywords": [
+    "SMTP",
+    "Node.js"
+  ],
+  "author": "arctome <hi@arcto.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arctome/fastify-smtp/issues"
+  },
+  "homepage": "https://github.com/arctome/fastify-smtp#readme",
+  "dependencies": {
+    "fastify": "^3.19.2",
+    "make-promises-safe": "^5.1.0",
+    "nodemailer": "^6.6.3"
+  }
+}
