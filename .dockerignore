@@ -4,3 +4,4 @@ pm2.json
 
 # User current environment file
 .env
+.env.example
