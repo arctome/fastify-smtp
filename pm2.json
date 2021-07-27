@@ -1,0 +1,22 @@
+{
+  "apps": {
+    "name": "fastify-smtp",
+    "script": "index.js",
+    "cwd": "./",
+    "args": "",
+    "interpreter": "",
+    "interpreter_args": "",
+    "watch": true,
+    "ignore_watch": ["node_modules", "logs"],
+    "exec_mode": "cluster_mode",
+    "instances": 2,
+    "max_memory_restart": "100M",
+    "error_file": "./logs/app-err.log",
+    "out_file": "./logs/app-out.log",
+    "merge_logs": true,
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "max_restarts": 30,
+    "autorestart": true,
+    "restart_delay": 60
+  }
+}

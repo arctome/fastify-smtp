@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+pm2.json
+
+# User current environment file
+.env
