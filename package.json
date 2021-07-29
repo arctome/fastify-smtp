@@ -1,6 +1,6 @@
 {
   "name": "fastify-smtp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A basic sender via SMTP, designed for out-of-box usage.",
   "main": "index.js",
   "scripts": {

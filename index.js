@@ -13,6 +13,19 @@ const VerifyHandler = require('./src/verify')
 const HealthHandler = require('./src/health')
 const SendHandler = require('./src/send')
 
+if (process.env.SECURITY_CODE) {
+    fastify.addHook('onRequest', (request, reply, done) => {
+        // You can put your SECURITY_CODE in url query string or headers.
+        let requestCode = request.query["security_code"];
+        if (!requestCode) requestCode = request.headers["security-code"];
+        if (!requestCode || requestCode !== process.env.SECURITY_CODE) {
+            reply.status(401).send();
+            return;
+        }
+        done()
+    })
+}
+
 if (process.env.SENTRY_ENABLE) {
     Sentry.init({
         dsn: process.env.SENTRY_DSN,
