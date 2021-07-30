@@ -3,7 +3,7 @@
 ### Docker
 
 ```bash
-docker run --name my-smtp-api -v /path/to/your/.env:/usr/src/app/.env fastify-smtp:latest
+docker run --name my-smtp-api -v /path/to/your/.env:/usr/src/app/.env ghcr.io/arctome/fastify-smtp:latest
 ```
 
 > You must mount a correct `.env` file, or docker will exit.
@@ -37,3 +37,6 @@ pm2 start pm2.json
 ### configs for Sentry
 - SENTRY_ENABLE=false
 - SENTRY_DSN=
+
+### Security Code
+- SECURITY_CODE=
